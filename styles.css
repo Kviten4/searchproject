@@ -36,30 +36,32 @@ a:hover {
 	margin: 10px;
 }
 .searchfield {
-	text-align: center;				
+	display: block;
+	align-items: center;			
 }
 
 .quaryform, .quary {
-	display: flex;
-	width: 100%;
-	background: rgb(36, 36, 36);
+	
 }
 
 .quaryform {	
-	flex: 1;
+	display: flex;
+	max-width: 540px;
+	min-width: 300px;
+	background: rgb(36, 36, 36);
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
 	margin-bottom: 30px;
 	height: 40px;
-	width: 100%;
-	max-width: 540px;
 	border: 1px solid rgb(99, 99, 99);
 	border-radius: 19px;
 	
 }
 .quary {
-	flex-wrap: wrap;
+	display: flex;
+	width: 100%;
+	background: rgb(36, 36, 36);
 	caret-color: white;
 	font-family: "Times New Roman";
 	font-size: 22px;
@@ -69,14 +71,14 @@ a:hover {
 	border: none;
 }
 
-.quaryform:hover + .quary, .quaryform:focus-within, .buttons > input:hover, .rows > input:hover, .rows > input:focus {
-    box-shadow: rgb(20 20 20) 0px 0px 8px 2px;
+.quaryform:hover, .quaryform:focus-within, .buttons > input:hover, .rows > input:hover, .rows > input:focus {
+	box-shadow: rgb(20 20 20) 0px 0px 8px 2px;
     border: 1px solid rgba(255, 255, 255, 0);
     background: rgb(50, 50, 50);
 }
 
-.quary:focus {
-	background: rgb(50, 50, 50);
+.quaryform:hover > .quary, .quary:focus {
+    background: rgb(50, 50, 50);
 }
 
 .buttons {
@@ -192,3 +194,16 @@ label {
 #abvsearch:hover {
 	background: darkgreen;
 }
+
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+	-webkit-text-fill-color: white;
+	-webkit-text-font-size: 22px;
+	-webkit-box-shadow: 0 0 0px 1000px rgb(50, 50, 50) inset;
+	font-size: 22px !important;
+}
+input:-webkit-autofill {
+	-webkit-text-fill-color: white;
+	-webkit-box-shadow: 0 0 0px 1000px rgb(36, 36, 36) inset;
+}
+
