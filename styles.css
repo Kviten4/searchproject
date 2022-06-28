@@ -198,9 +198,7 @@ label {
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
 	-webkit-text-fill-color: white;
-	-webkit-text-font-size: 22px;
 	-webkit-box-shadow: 0 0 0px 1000px rgb(50, 50, 50) inset;
-	font-size: 22px !important;
 }
 input:-webkit-autofill {
 	-webkit-text-fill-color: white;
