@@ -117,7 +117,6 @@ a:hover {
 
 .form {
 	display: block;
-	max-width: 1300px;
 }
 
 label {
@@ -125,15 +124,7 @@ label {
 }
 
 .mainlabel {
-	display: flex;
 	font-size: 20px;
-	height: 50px;
-}
-
-.lb1a{
-	display: block;
-	width: 745px;
-	min-width: 420px;
 }
 
 .rows {
@@ -146,17 +137,30 @@ label {
 
 .lb1 {
 	display: block;
-	width: 200px;
+	width: 170px;
 	min-width: 170px;
+	height: 18px;
 }
 
 .lb2 {
 	display: block;
 	width: 500px;
-	min-width: 200px;	
+	min-width: 200px;
 }
+
+.lb3 {
+	display: block;
+	width: 499px;
+	min-width: 260px;
+	height: 18px;
+}
+
+p {
+	margin: 0;
+}
+
 .rows > input {
-	height: 28px;
+	height: 32px;
 	background: rgb(36, 36, 36);
 	border: 1px solid rgb(99, 99, 99);
 	border-radius: 5px;
@@ -166,18 +170,11 @@ label {
 	color: whitesmoke;
 	padding-left: 5px;
 	outline: none;
-}
-
-.lb3 {
-	display: block;
-	min-width: 500px;
+	box-sizing: border-box;
 }
 
 #lb2b {
-	display: block;
 	text-align: right;
-	width: 509px;
-	min-width: 209px;
 }
 
 #abvsearch {
@@ -197,11 +194,50 @@ label {
 
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
-	-webkit-text-fill-color: white;
+	-webkit-text-font-size: 22px;
 	-webkit-box-shadow: 0 0 0px 1000px rgb(50, 50, 50) inset;
+	transition: background-color 600000s 0s, color 600000s 0s;
 }
 input:-webkit-autofill {
 	-webkit-text-fill-color: white;
 	-webkit-box-shadow: 0 0 0px 1000px rgb(36, 36, 36) inset;
 }
 
+@media (max-width: 753px) {
+	#todo {
+		display: none;
+	}
+	#mainrow {
+		height: 30px;
+	}
+	#abvsearch {
+		margin-top: 3px;
+	}
+	.mainform {
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 30px;
+	}
+	.rows {
+		flex-wrap: wrap;
+		height: 82px;
+		flex-direction: column;
+		align-items: start;
+		justify-content: flex-start;
+		gap: 3px;
+	}
+	.lb2, .lb3 {
+		display: flex;
+		width: 100%;
+		max-width: 500px;
+		margin-right: 0;	
+	}
+	#lb2b {
+	justify-content: flex-end;
+	}
+}
+@media only screen and (max-width: 446px) {
+	.rows {
+		height: 95px;
+	}
+}
