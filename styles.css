@@ -40,10 +40,6 @@ a:hover {
 	align-items: center;			
 }
 
-.quaryform, .quary {
-	
-}
-
 .quaryform {	
 	display: flex;
 	max-width: 540px;
@@ -55,9 +51,9 @@ a:hover {
 	margin-bottom: 30px;
 	height: 40px;
 	border: 1px solid rgb(99, 99, 99);
-	border-radius: 19px;
-	
+	border-radius: 19px;	
 }
+
 .quary {
 	display: flex;
 	width: 100%;
@@ -139,7 +135,6 @@ label {
 	display: block;
 	width: 170px;
 	min-width: 170px;
-	height: 18px;
 }
 
 .lb2 {
@@ -152,11 +147,12 @@ label {
 	display: block;
 	width: 499px;
 	min-width: 260px;
-	height: 18px;
+	display: inline-block;
+  	vertical-align: middle;
 }
 
 p {
-	margin: 0;
+	margin: auto 0;
 }
 
 .rows > input {
@@ -211,7 +207,7 @@ input:-webkit-autofill {
 		height: 30px;
 	}
 	#abvsearch {
-		margin-top: 3px;
+		margin-top: 8px;
 	}
 	.mainform {
 		padding-left: 5px;
@@ -232,12 +228,23 @@ input:-webkit-autofill {
 		max-width: 500px;
 		margin-right: 0;	
 	}
+	.lb3 {
+		height: 18px;
+	}
 	#lb2b {
 	justify-content: flex-end;
 	}
 }
 @media only screen and (max-width: 446px) {
-	.rows {
+	#thirdrow {
+		height: 95px;
+	}
+	#abvsearch {
+		margin-top: 12px;
+	}
+}
+@media only screen and (max-width: 316px) {
+	#firstrow {
 		height: 95px;
 	}
 }
