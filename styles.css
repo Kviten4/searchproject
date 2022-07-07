@@ -65,6 +65,7 @@ a:hover {
 	margin-right: 10px;
 	outline: none;
 	border: none;
+	border-radius: 10px;
 }
 
 .quaryform:hover, .quaryform:focus-within, .buttons > input:hover, .rows > input:hover, .rows > input:focus {
